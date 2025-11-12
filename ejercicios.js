@@ -165,12 +165,19 @@ console.log("El factorial de 5 es:", factorial(5));
 
 /**
  * Ejercicio 3.2: Suma de nÃºmeros del 1 al n (4 puntos)
- * @param {number} n - NÃºmero lÃ­mite
+ * Calcula la suma de los números desde 1 hasta n.
+ * Ejemplo: sumaHastaN(5) = 1 + 2 + 3 + 4 + 5 = 15
+ * @param {number} n - Número límite
  * @returns {number} - Suma de 1 + 2 + 3 + ... + n
  */
 function sumaHastaN(n) {
-  // TODO: Usa un bucle para sumar todos los nÃºmeros desde 1 hasta n
-  return 0;
+  let suma = 0;
+
+  for (let i = 1; i <= n; i++) {
+    suma += i;
+  }
+
+  return suma;
 }
 
 /**
