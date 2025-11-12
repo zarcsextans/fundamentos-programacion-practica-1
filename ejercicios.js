@@ -203,8 +203,12 @@ const tabla = [];
  * Ejemplo: numerosPares(10) debe retornar [2, 4, 6, 8, 10]
  */
 function numerosPares(n) {
-  // TODO: Crea un array con todos los nÃºmeros pares hasta n
-  const pares = [];
+const pares = [];
+
+  for (let i = 2; i <= n; i += 2) {
+    pares.push(i);
+  }
+
   return pares;
 }
 
