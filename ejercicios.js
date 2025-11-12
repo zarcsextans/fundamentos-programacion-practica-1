@@ -356,7 +356,7 @@ function obtenerFila(matriz, indiceFila) {
   return matriz[indiceFila];
 }
   // TODO: Retorna la fila indicada
-  
+
 /**
  * Ejercicio 5.4: Obtener una columna (7 puntos)
  * @param {Array<Array<number>>} matriz - Matriz
@@ -365,8 +365,12 @@ function obtenerFila(matriz, indiceFila) {
  * Ejemplo: obtenerColumna([[1, 2], [3, 4], [5, 6]], 0) debe retornar [1, 3, 5]
  */
 function obtenerColumna(matriz, indiceColumna) {
-  // TODO: Extrae todos los elementos de la columna indicada
-  const columna = [];
+const columna = [];
+
+  for (let i = 0; i < matriz.length; i++) {
+    columna.push(matriz[i][indiceColumna]);
+  }
+
   return columna;
 }
 
