@@ -333,10 +333,17 @@ const matriz = [];
  * Ejemplo: sumaMatriz([[1, 2], [3, 4]]) debe retornar 10
  */
 function sumaMatriz(matriz) {
-  // TODO: Suma todos los elementos de la matriz
-  // NecesitarÃ¡s dos bucles: uno para las filas y otro para las columnas
-  return 0;
+  let suma = 0;
+
+  for (let i = 0; i < matriz.length; i++) {           // Recorre las filas
+    for (let j = 0; j < matriz[i].length; j++) {      // Recorre las columnas
+      suma += matriz[i][j];
+    }
+  }
+
+  return suma;
 }
+
 
 /**
  * Ejercicio 5.3: Obtener una fila (5 puntos)
