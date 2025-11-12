@@ -132,7 +132,7 @@ function clasificarEdad(edad) {
   } else if (edad >= 65) {
     return "mayor";
   }
- 
+  return "";
 }
 
 // ============================================
@@ -141,15 +141,27 @@ function clasificarEdad(edad) {
 
 /**
  * Ejercicio 3.1: Factorial (5 puntos)
- * Calcula el factorial de un nÃºmero (n! = n * (n-1) * (n-2) * ... * 1)
+ * Calcula el factorial de un número (n! = n * (n-1) * (n-2) * ... * 1)
  * Ejemplo: factorial(5) = 5 * 4 * 3 * 2 * 1 = 120
- * @param {number} n - NÃºmero entero positivo
+ * @param {number} n - Número entero positivo
  * @returns {number} - Factorial de n
  */
 function factorial(n) {
-  // TODO: Implementa usando un bucle for
-  return 1;
+  let resultado = 1;
+
+  for (let i = 1; i <= n; i++) {
+    resultado *= i;
+  }
+
+  return resultado;
 }
+
+// Ejemplo de prueba
+console.log(factorial(5));
+
+// Prueba con 5 (debería dar 120)
+console.log("El factorial de 5 es:", factorial(5));
+
 
 /**
  * Ejercicio 3.2: Suma de nÃºmeros del 1 al n (4 puntos)
